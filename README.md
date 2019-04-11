@@ -1,6 +1,6 @@
 # rollup-plugin-extract-bundle-tree
 
-[Rollup](https://github.com/rollup/rollup) plugin to export rollup bundle tree to a JSON file.
+[Rollup](https://github.com/rollup/rollup) plugin to export the rollup bundle tree to a JSON file.
 
 ## Installation
 
@@ -38,15 +38,15 @@ All fields are optional.
     "isDynamicEntry": true,
     "imports": [
       "{file_name}",
-      ...
+      "..."
     ],
     "dynamicImports": [
       "{file_name}",
-      ...
+      "..."
     ],
     "assetImports": [
       "{file_name}",
-      ...
+      "..."
     ],
   }
 }

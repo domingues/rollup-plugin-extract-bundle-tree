@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-extract-bundle-tree",
   "version": "1.0.0",
-  "description": "Rollup plugin to export rollup bundle tree to a JSON file",
+  "description": "Rollup plugin to export the rollup bundle tree to a JSON file",
   "main": "index.js",
   "files": [
     "index.js",
