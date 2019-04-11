@@ -1,0 +1,32 @@
+{
+  "name": "rollup-plugin-extract-bundle-tree",
+  "version": "1.0.0",
+  "description": "Rollup plugin to export rollup bundle tree to a JSON file",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "eslint index.js",
+    "prepublishOnly": "npm run lint"
+  },
+  "repository": "domingues/rollup-plugin-extract-bundle-tree",
+  "keywords": [
+    "rollup-plugin",
+    "css"
+  ],
+  "author": "Fábio Domingues",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/domingues/rollup-plugin-extract-bundle-tree/issues"
+  },
+  "homepage": "https://github.com/domingues/rollup-plugin-extract-bundle-tree",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "peerDependencies": {
+    "rollup": ">=0.60.0"
+  }
+}
