@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-extract-bundle-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rollup plugin to export the rollup bundle tree to a JSON file",
   "main": "index.js",
   "files": [
@@ -14,8 +14,7 @@
   },
   "repository": "domingues/rollup-plugin-extract-bundle-tree",
   "keywords": [
-    "rollup-plugin",
-    "css"
+    "rollup-plugin"
   ],
   "author": "Fábio Domingues",
   "license": "MIT",
