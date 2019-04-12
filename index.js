@@ -1,4 +1,18 @@
 const fs = require('fs');
+const path = require('path');
+
+function mkdirp(dir) {
+	const parent = path.dirname(dir);
+	if (parent === dir) return;
+
+	mkdirp(parent);
+
+	try {
+		fs.mkdirSync(dir);
+	} catch (err) {
+		if (err.code !== 'EEXIST') throw err;
+	}
+}
 
 module.exports = function svelte(options = {}) {
 	const defaultPluginOptions = {
@@ -40,6 +54,7 @@ module.exports = function svelte(options = {}) {
 				}
 				tree[chunk.fileName] = node;
 			}
+			mkdirp(path.dirname(pluginOptions.file));
 			fs.writeFileSync(pluginOptions.file, JSON.stringify(tree, null, '  '));
 		}
 	};
