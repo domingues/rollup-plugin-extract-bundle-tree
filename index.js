@@ -3,14 +3,14 @@ const path = require('path');
 
 function mkdirp(dir) {
 	const parent = path.dirname(dir);
-	if (parent === dir) return;
+	if (parent===dir) return;
 
 	mkdirp(parent);
 
 	try {
 		fs.mkdirSync(dir);
 	} catch (err) {
-		if (err.code !== 'EEXIST') throw err;
+		if (err.code!=='EEXIST') throw err;
 	}
 }
 
@@ -47,9 +47,6 @@ module.exports = function svelte(options = {}) {
 					}
 					if (chunk.dynamicImports && chunk.dynamicImports.length>0) {
 						node.dynamicImports = [...chunk.dynamicImports];
-					}
-					if (chunk.assetImports && chunk.assetImports.length>0) {
-						node.assetImports = [...chunk.assetImports];
 					}
 				}
 				tree[chunk.fileName] = node;

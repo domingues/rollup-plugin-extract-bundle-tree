@@ -43,11 +43,7 @@ All fields are optional.
     "dynamicImports": [
       "{file_name}",
       "..."
-    ],
-    "assetImports": [
-      "{file_name}",
-      "..."
-    ],
+    ]
   }
 }
 ```
@@ -63,18 +59,14 @@ All fields are optional.
   "contacts.js": {
     "isEntry": true,
     "imports": [
-      "chunk-0afaf479.js"
-    ],
-    "assetImports": [
+      "chunk-0afaf479.js",
       "contacts.css"
     ]
   },
   "index.js": {
     "isEntry": true,
     "imports": [
-      "chunk-0afaf479.js"
-    ],
-    "assetImports": [
+      "chunk-0afaf479.js",
       "index.css"
     ]
   },
