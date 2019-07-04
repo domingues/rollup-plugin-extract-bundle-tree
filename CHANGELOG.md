@@ -1,5 +1,9 @@
 # rollup-plugin-extract-bundle-tree changelog
 
+## 1.1.1 (04/07/2019)
+
+* Fix dependencies.
+
 ## 1.1.0 (21/05/2019)
 
 * Remove `chunk.assetImports`.
