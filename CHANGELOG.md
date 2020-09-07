@@ -1,5 +1,9 @@
 # rollup-plugin-extract-bundle-tree changelog
 
+## 1.1.2 (07/09/2020)
+
+* Support Rollup 2.
+
 ## 1.1.1 (04/07/2019)
 
 * Fix dependencies.

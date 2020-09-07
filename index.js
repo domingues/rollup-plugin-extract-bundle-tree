@@ -29,11 +29,11 @@ module.exports = function svelte(options = {}) {
 	return {
 		name: 'bundle-tree',
 
-		writeBundle(bundle) {
+		writeBundle(options, bundle = options) {
 			const tree = {};
 			for (const chunk of Object.values(bundle)) {
 				const node = {};
-				if (chunk.isAsset===true) {
+				if (chunk.type === 'asset') {
 					node.isAsset = true;
 				} else {
 					if (chunk.isEntry===true) {
