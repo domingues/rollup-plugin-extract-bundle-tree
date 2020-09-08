@@ -33,6 +33,7 @@ All fields are optional.
 ```json
 {
   "{file_name}": {
+    "chunkName": "{chunk_name}",
     "isAsset": true,
     "isEntry": true,
     "isDynamicEntry": true,
@@ -51,26 +52,29 @@ All fields are optional.
 ## Example
 ```json
 {
-  "chunk-0afaf479.js": {
+  "Template-0afaf479.js": {
+    "chunkName": "Template",
     "assetImports": [
-      "chunk-8b5a5bc7.css"
+      "Template-8b5a5bc7.css"
     ]
   },
   "contacts.js": {
+    "chunkName": "contacts",
     "isEntry": true,
     "imports": [
-      "chunk-0afaf479.js",
+      "Template-0afaf479.js",
       "contacts.css"
     ]
   },
   "index.js": {
+    "chunkName": "index",
     "isEntry": true,
     "imports": [
-      "chunk-0afaf479.js",
+      "Template-0afaf479.js",
       "index.css"
     ]
   },
-  "chunk-8b5a5bc7.css": {
+  "Template-8b5a5bc7.css": {
     "isAsset": true
   },
   "contacts.css": {

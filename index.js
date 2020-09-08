@@ -32,7 +32,9 @@ module.exports = function svelte(options = {}) {
 		writeBundle(options, bundle = options) {
 			const tree = {};
 			for (const chunk of Object.values(bundle)) {
-				const node = {};
+				const node = {
+					chunkName: chunk.name,
+				};
 				if (chunk.type === 'asset') {
 					node.isAsset = true;
 				} else {

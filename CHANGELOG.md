@@ -1,5 +1,9 @@
 # rollup-plugin-extract-bundle-tree changelog
 
+## 1.2.0 (08/09/2020)
+
+* Add `chunkName`.
+
 ## 1.1.2 (07/09/2020)
 
 * Support Rollup 2.
